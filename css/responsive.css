@@ -1,0 +1,271 @@
+/* 响应式设计样式 */
+
+/* 平板设备（最大宽度：1024px） */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .logo {
+        margin-right: 0;
+    }
+    
+    .nav-item {
+        margin-left: 20px;
+    }
+    
+    .nav-item:first-child {
+        margin-left: 20px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 25px;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .banner h1 {
+        font-size: 36px;
+    }
+    
+    .banner p {
+        font-size: 18px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+/* 小平板设备（最大宽度：768px） */
+@media (max-width: 768px) {
+    /* 汉堡菜单显示 */
+    .hamburger {
+        display: flex;
+        order: 2;
+    }
+    
+    /* 在移动视图中调整顺序 */
+    .logo {
+        order: 1;
+    }
+    
+    .nav-right {
+        order: 4;
+    }
+    
+    /* 导航菜单隐藏 */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: rgba(42, 92, 170, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    
+    /* 导航菜单展开 */
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 20px 0;
+    }
+    
+    /* 右侧导航隐藏 */
+    .nav-right {
+        display: none;
+    }
+    
+    .banner {
+        padding: 80px 0;
+    }
+    
+    .banner h1 {
+        font-size: 28px;
+    }
+    
+    .banner p {
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .product-section,
+    .tech-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+    }
+    
+    .product-card img {
+        height: 180px;
+    }
+    
+    .contact-form {
+        padding: 30px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+/* 移动设备（最大宽度：480px） */
+@media (max-width: 480px) {
+    .logo-img {
+        height: 40px;
+    }
+    
+    .banner {
+        padding: 60px 0;
+    }
+    
+    .banner h1 {
+        font-size: 24px;
+    }
+    
+    .banner p {
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .product-section,
+    .tech-section,
+    .contact-section {
+        padding: 50px 0;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .product-info {
+        padding: 15px;
+    }
+    
+    .tech-card {
+        padding: 20px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer-content {
+        gap: 25px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* 极小型移动设备（最大宽度：320px） */
+@media (max-width: 320px) {
+    .navbar {
+        padding: 8px 0;
+    }
+    
+    .logo-img {
+        height: 35px;
+    }
+    
+    .banner h1 {
+        font-size: 20px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .contact-form {
+        padding: 15px;
+    }
+    
+    .footer-logo-img {
+        height: 50px;
+    }
+}
+
+/* 响应式表格 */
+@media (max-width: 768px) {
+    .compatibility-table table {
+        font-size: 14px;
+    }
+    
+    .compatibility-table th,
+    .compatibility-table td {
+        padding: 8px;
+    }
+}
+
+/* 响应式图片 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 移动端表单调整 */
+@media (max-width: 480px) {
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        font-size: 14px;
+    }
+}
+
+/* 汉堡菜单动画 */
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}

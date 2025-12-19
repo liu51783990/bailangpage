@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品中心 - 上海百朗工贸有限公司</title>
+    <meta name="description" content="上海百朗工贸有限公司提供各类工业密封产品，包括GL45瓶密封、自封袋、工业级密封件等，专业的化工密封解决方案提供商。">
+    <meta name="keywords" content="密封产品,GL45瓶密封,自封袋,工业级密封件,化工密封">
+    
+    <!-- Schema.org 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "化工密封产品系列",
+        "brand": {
+            "@type": "Organization",
+            "name": "上海百朗工贸有限公司"
+        },
+        "description": "专业的化工密封解决方案，包括GL45瓶密封、自封袋等工业级密封产品",
+        "category": "化工设备"
+    }
+    </script>
+    
+    <!-- 引入CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- 字体引入 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/BLLOGO.jpeg" alt="上海百朗工贸有限公司" class="logo-img">
+                    </a>
+                </div>
+                
+                <!-- 主导航 -->
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link active">产品中心</a></li>
+                    <li class="nav-item"><a href="gl45.html" class="nav-link">GL45密封方案</a></li>
+                    <li class="nav-item"><a href="ziplock.html" class="nav-link">自封袋系列</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">关于我们</a></li>
+                </ul>
+                
+                <!-- 右侧功能区 -->
+                <div class="nav-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="搜索产品...">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    
+
+                </div>
+                
+                <!-- 移动端汉堡菜单 -->
+                <button class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 产品页横幅 -->
+        <section class="banner">
+            <div class="container">
+                <div class="banner-content">
+                    <h1>产品中心</h1>
+                    <p>工业级密封产品，满足各类化工应用需求</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 产品分类 -->
+        <section class="product-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">全部产品</button>
+                    <button class="category-tab" data-category="gl45">GL45瓶密封</button>
+                    <button class="category-tab" data-category="ziplock">自封袋</button>
+                    <button class="category-tab" data-category="other">其他密封产品</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 产品列表 -->
+        <section class="product-list-section">
+            <div class="container">
+                <div class="product-grid" id="productGrid">
+                    <!-- 产品卡片将通过JavaScript动态加载 -->
+                </div>
+                <button class="btn btn-secondary" id="loadMore">加载更多</button>
+            </div>
+        </section>
+    </main>
+    
+    <!-- 底部版权模块 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <h4 class="footer-text">上海百朗工贸有限公司</h4>
+                    </div>
+                    <div class="footer-contact">
+                        <p>地址：上海宝山东界泾村52号</p>
+                        <p>电话：13818568462 021-56864537</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="solutions.html">行业方案</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>行业关联</h4>
+                    <ul>
+                        <li><a href="#" rel="nofollow">化工设备供应商</a></li>
+                        <li><a href="#" rel="nofollow">实验室器材品牌</a></li>
+                        <li><a href="#" rel="nofollow">材料检测机构</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <div class="wechat-qrcode">
+                        <img src="images/二维码.jpg" alt="微信二维码" class="qrcode-img">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 引入JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

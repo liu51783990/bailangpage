@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海百朗工贸有限公司 - 化工密封解决方案提供商</title>
+    <meta name="description" content="上海百朗工贸有限公司是专业的化工密封解决方案提供商，提供工业级密封产品、耐腐蚀材料和定制化密封服务，ISO认证保证品质。">
+    <meta name="keywords" content="密封,耐腐蚀,工业级,定制化,ISO认证,GL45瓶密封,自封袋">
+    
+    <!-- Schema.org 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "上海百朗工贸有限公司",
+        "url": "http://localhost:8000",
+        "logo": "images/logo.svg",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-21-56864537",
+            "contactType": "customer service"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "上海宝山东界泾村52号",
+            "addressLocality": "上海",
+            "addressCountry": "CN"
+        }
+    }
+    </script>
+    
+    <!-- 引入CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- 字体引入 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="logo">
+            <a href="index.html">
+                <img src="images/BLLOGO.jpeg" alt="上海百朗工贸有限公司" class="logo-img">
+            </a>
+        </div>
+                
+                <!-- 主导航 -->
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">首页</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">产品中心</a></li>
+                    <li class="nav-item"><a href="gl45.html" class="nav-link">GL45密封方案</a></li>
+                    <li class="nav-item"><a href="ziplock.html" class="nav-link">自封袋系列</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">关于我们</a></li>
+                </ul>
+                
+                <!-- 右侧功能区 -->
+                <div class="nav-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="搜索产品...">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                        
+                </div>
+                
+                <!-- 移动端汉堡菜单 -->
+                <button class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 首页横幅 -->
+        <section class="banner">
+            <div class="container">
+                <div class="banner-content">
+                    <h1>专业化工密封解决方案</h1>
+                    <p>工业级品质，定制化服务，ISO认证保障</p>
+                    <a href="products.html" class="btn btn-primary">查看产品</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 产品展示模块 -->
+        <section class="product-section">
+            <div class="container">
+                <h2 class="section-title">核心产品</h2>
+                <div class="product-grid" id="productGrid">
+                    <!-- 产品卡片将通过JavaScript动态加载 -->
+                </div>
+                <button class="btn btn-secondary" id="loadMore">加载更多</button>
+            </div>
+        </section>
+        
+        <!-- 技术参数模块 -->
+        <section class="tech-section">
+            <div class="container">
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h3>化学兼容性</h3>
+                        <div class="compatibility-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>材料</th>
+                                        <th>温度范围</th>
+                                        <th>耐酸性</th>
+                                        <th>耐碱性</th>
+                                        <th>耐溶剂性</th>
+                                        <th>应用领域</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>PP（聚丙烯）</td>
+                                        <td>-20°C 至 120°C</td>
+                                        <td>优良</td>
+                                        <td>良好</td>
+                                        <td>一般</td>
+                                        <td>食品、医药、化工</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PE（聚乙烯）</td>
+                                        <td>-40°C 至 80°C</td>
+                                        <td>优良</td>
+                                        <td>优良</td>
+                                        <td>一般</td>
+                                        <td>食品包装、农业</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PTFE（聚四氟乙烯）</td>
+                                        <td>-200°C 至 260°C</td>
+                                        <td>优异</td>
+                                        <td>优异</td>
+                                        <td>优异</td>
+                                        <td>高温、强腐蚀环境</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PVC（聚氯乙烯）</td>
+                                        <td>-15°C 至 60°C</td>
+                                        <td>良好</td>
+                                        <td>一般</td>
+                                        <td>一般</td>
+                                        <td>建筑、电子、医疗</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PA（尼龙）</td>
+                                        <td>-40°C 至 120°C</td>
+                                        <td>一般</td>
+                                        <td>一般</td>
+                                        <td>良好</td>
+                                        <td>机械、汽车、电气</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 在线咨询表单 -->
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">在线咨询</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">手机号</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">咨询内容及对产品的要求和使用场景</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="attachment">附件上传 (PDF/PNG, ≤5MB)</label>
+                        <input type="file" id="attachment" name="attachment" accept=".pdf,.png" max-size="5242880">
+                    </div>
+                    <button type="submit" class="btn btn-primary">提交咨询</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- 底部版权模块 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <h4 class="footer-text">上海百朗工贸有限公司</h4>
+                    </div>
+                    <div class="footer-contact">
+                        <p>地址：上海宝山东界泾村52号</p>
+                        <p>电话：13818568462 021-56864537</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="solutions.html">行业方案</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>行业关联</h4>
+                    <ul>
+                        <li><a href="#" rel="nofollow">化工设备供应商</a></li>
+                        <li><a href="#" rel="nofollow">实验室器材品牌</a></li>
+                        <li><a href="#" rel="nofollow">材料检测机构</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <div class="wechat-qrcode">
+                        <img src="images/二维码.jpg" alt="微信二维码" class="qrcode-img">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 引入JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+
+    <script src="js/form.js"></script>
+    
+    <!-- 安全策略：使用DOMPurify防止XSS攻击 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.0/purify.min.js"></script>
+</body>
+</html>
